@@ -1,0 +1,21 @@
+Hello Becky and Christine,
+
+Hope you both are doing well! I have created the dataset connecting the dual class list and Compustat.
+
+Attached is a zip file containing the following:
+dualclass_ein_merge.do: The code that merges Compustat and  the DualClass dataset
+compustat_full:  Compustat Fundamental Annual (1990-2005 year)
+compustat_ein: An intermediary "cleaned" dataset created to merge with dual-class
+DualClass.xls: A version of the dual-class data with GVKEY from the author
+gvkey_ein_dualclass.dta: The final merged dataset
+gvkey_ein_dualclass.csv: The final merged dataset in Excel format
+GVKeys.txt: List of GVKeys that did not merge
+missing orgs.csv: GVKeys and EINs gotten from Compustat using GVKeys.txt
+I describe my thought process in the code please let me know if there are any questions. 
+One thing to note about the final dataset is that if there are missing EINs (EIN == ".") it is due to Compustat not having an EIN for that company. 
+This is the case for 41 observations (out of  ~3,700 ).
+
+Also ignore the "Secure:" in the subject line. Stanford keeps blocking this email for "containing sensitive info".
+
+Best,
+Mauricio
