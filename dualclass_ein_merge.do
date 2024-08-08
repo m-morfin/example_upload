@@ -9,7 +9,7 @@ use "compustat_full.dta"
 keep gvkey fyear ein conm
 rename gvkey GVKEY
 rename fyear YEAR
-helloe wndkjsndjknfkjnds
+
 rename conm name
 destring GVKEY, replace
 save "compustat_ein.dta", replace
